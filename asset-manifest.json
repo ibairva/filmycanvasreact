@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/filmycanvasreact/static/css/main.149f8f9e.chunk.css",
+    "main.js": "/filmycanvasreact/static/js/main.7c83af14.chunk.js",
+    "main.js.map": "/filmycanvasreact/static/js/main.7c83af14.chunk.js.map",
+    "runtime-main.js": "/filmycanvasreact/static/js/runtime-main.d4337c53.js",
+    "runtime-main.js.map": "/filmycanvasreact/static/js/runtime-main.d4337c53.js.map",
+    "static/js/2.d12806c6.chunk.js": "/filmycanvasreact/static/js/2.d12806c6.chunk.js",
+    "static/js/2.d12806c6.chunk.js.map": "/filmycanvasreact/static/js/2.d12806c6.chunk.js.map",
+    "index.html": "/filmycanvasreact/index.html",
+    "precache-manifest.5fb0114084923a1a2822cc33d739415d.js": "/filmycanvasreact/precache-manifest.5fb0114084923a1a2822cc33d739415d.js",
+    "service-worker.js": "/filmycanvasreact/service-worker.js",
+    "static/css/main.149f8f9e.chunk.css.map": "/filmycanvasreact/static/css/main.149f8f9e.chunk.css.map",
+    "static/js/2.d12806c6.chunk.js.LICENSE.txt": "/filmycanvasreact/static/js/2.d12806c6.chunk.js.LICENSE.txt",
+    "static/media/bg1.png": "/filmycanvasreact/static/media/bg1.8c7bc256.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4337c53.js",
+    "static/js/2.d12806c6.chunk.js",
+    "static/css/main.149f8f9e.chunk.css",
+    "static/js/main.7c83af14.chunk.js"
+  ]
+}

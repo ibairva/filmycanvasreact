@@ -60,12 +60,20 @@ div .clearfx {
   right: 40px;
   bottom: 0px;
   background-color: #ccbbbb;
-  /* border: 4px solid #f14922; */
   box-shadow: 10px 10px 10px black;
   border-radius: 4px;
   outline: none;
   padding: 10px;
   margin: 60px auto;
+  animation: enter 700ms;
+}
+@keyframes enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .movie-details span {
   text-align: left;
@@ -79,8 +87,6 @@ div .clearfx {
   height: auto;
   color: #1f1d1dfc;
   padding: 3px;
-  /* justify-content: space-around;
-  align-items: center; */
 }
 .close-btn {
   width: 140px;
@@ -107,6 +113,23 @@ div .clearfx {
   width: 98%;
   height: 50px;
 }
+.ratings {
+  overflow: auto;
+  max-height: 27vh;
+}
+.ratings::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 5px;
+  height: 5px;
+}
+.ratings::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #907a7a;
+}
+.ratings::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #82281af5;
+}
 @media screen and (max-width: 768px) {
   .Modal {
     margin: 48px auto;
@@ -114,20 +137,14 @@ div .clearfx {
   .img-ratings {
     width: 100%;
     display: inline-flex;
+    padding: 0px 8% 0px 5%;
   }
   .ratings {
     margin: 0px 3%;
-    /* border: 2px solid #c12911; */
-    border-radius: 3%;
-    padding: 4px;
   }
   .ratings p {
     margin: 24px 0px;
     font-size: 12px;
-  }
-  .img-ratings {
-    width: 100%;
-    padding: 0px 8% 0px 5%;
   }
   .movie_img {
     width: 115px;
@@ -138,7 +155,6 @@ div .clearfx {
   }
   .basic_info {
     width: 100%;
-    /* border: 2px solid #c12911; */
     padding: 5px;
     margin: 5px auto;
     height: 39vh;
@@ -160,11 +176,8 @@ div .clearfx {
   .img-ratings {
     padding: 0px 3% 0px 3%;
   }
-  .ratings {
-    margin: 0px 6%;
-  }
   .ratings p {
-    margin: 22px 0px;
+    margin: 12% 0px;
   }
   .movie-details span {
     font-size: 13px;

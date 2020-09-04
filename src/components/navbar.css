@@ -6,18 +6,10 @@
   width: 100%;
   height: 100px;
   margin: 0px auto;
-  background-color: #c12911; /*#182628*/
+  background-color: #c12911;
   z-index: 10;
-  /* animation: nav-anim 1000ms; */
 }
-/* @keyframes nav-anim {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
+
 .nav-logo {
   display: flex;
   float: left;
@@ -80,12 +72,6 @@
     font-size: 20px;
     padding: 14px 4px;
     margin: 0px 9%;
-  }
-  .title_room h1 {
-    font-size: 28px;
-  }
-  .title_room h1 span {
-    font-size: 36px;
   }
 }
 @media screen and (max-width: 524px) {

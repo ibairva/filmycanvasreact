@@ -96,7 +96,7 @@ function Movieinfo({ movieData, modalIsOpen, setModalIsOpen }) {
               {movieData.Plot}
             </p>
           </div>
-          <div className="info-footer">
+          <footer className="info-footer">
             <a
               className="close-btn"
               id="search"
@@ -105,7 +105,7 @@ function Movieinfo({ movieData, modalIsOpen, setModalIsOpen }) {
               <div>Close Window</div>
               {/* <i className="far fa-times-circle"></i> */}
             </a>
-          </div>
+          </footer>
         </div>
       </Modal>
     </div>

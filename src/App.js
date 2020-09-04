@@ -20,13 +20,9 @@ function App() {
 
   const handleInput = (e) => {
     let input = e.target.value;
-    if (input === undefined) {
-      alert("Please enter a movie name");
-    } else {
-      setUserInput(() => {
-        return input;
-      });
-    }
+    setUserInput(() => {
+      return input;
+    });
   };
 
   const onKeySearch = (e) => {
@@ -37,7 +33,7 @@ function App() {
 
   const search = () => {
     if (userInput === undefined) {
-      console.log("No Input");
+      alert("Movie name cannot be blank");
     } else {
       axios(myApiUrl + "s=" + userInput).then(({ data }) => {
         console.log(userInput);
@@ -92,7 +88,7 @@ function App() {
           false
         )}
       </div>
-      <footer>
+      <footer className="main-footer">
         <h3>All Rights Reserved @FilmyCanvas</h3>
       </footer>
     </div>

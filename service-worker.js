@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/filmycanvasreact/precache-manifest.75034ab281d7cf5d94190765abc1faa3.js"
+  "/filmycanvasreact/precache-manifest.15fafca566de1a8b581d15a85b6533bb.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/filmycanvasreact/static/css/main.f5992c56.chunk.css",
-    "main.js": "/filmycanvasreact/static/js/main.03474ad3.chunk.js",
-    "main.js.map": "/filmycanvasreact/static/js/main.03474ad3.chunk.js.map",
+    "main.css": "/filmycanvasreact/static/css/main.a0523950.chunk.css",
+    "main.js": "/filmycanvasreact/static/js/main.6dccde94.chunk.js",
+    "main.js.map": "/filmycanvasreact/static/js/main.6dccde94.chunk.js.map",
     "runtime-main.js": "/filmycanvasreact/static/js/runtime-main.d4337c53.js",
     "runtime-main.js.map": "/filmycanvasreact/static/js/runtime-main.d4337c53.js.map",
     "static/js/2.d12806c6.chunk.js": "/filmycanvasreact/static/js/2.d12806c6.chunk.js",
     "static/js/2.d12806c6.chunk.js.map": "/filmycanvasreact/static/js/2.d12806c6.chunk.js.map",
     "index.html": "/filmycanvasreact/index.html",
-    "precache-manifest.79494e0fa2bed84cd8103b51495507b9.js": "/filmycanvasreact/precache-manifest.79494e0fa2bed84cd8103b51495507b9.js",
+    "precache-manifest.496bc92b14dbbc9e35f5c21a550b465b.js": "/filmycanvasreact/precache-manifest.496bc92b14dbbc9e35f5c21a550b465b.js",
     "service-worker.js": "/filmycanvasreact/service-worker.js",
-    "static/css/main.f5992c56.chunk.css.map": "/filmycanvasreact/static/css/main.f5992c56.chunk.css.map",
+    "static/css/main.a0523950.chunk.css.map": "/filmycanvasreact/static/css/main.a0523950.chunk.css.map",
     "static/js/2.d12806c6.chunk.js.LICENSE.txt": "/filmycanvasreact/static/js/2.d12806c6.chunk.js.LICENSE.txt",
     "static/media/bg1.png": "/filmycanvasreact/static/media/bg1.8c7bc256.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d4337c53.js",
     "static/js/2.d12806c6.chunk.js",
-    "static/css/main.f5992c56.chunk.css",
-    "static/js/main.03474ad3.chunk.js"
+    "static/css/main.a0523950.chunk.css",
+    "static/js/main.6dccde94.chunk.js"
   ]
 }

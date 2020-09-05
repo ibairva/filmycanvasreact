@@ -21,6 +21,7 @@ function App() {
 
   const handleInput = (e) => {
     let input = e.target.value;
+    // console.log(input);
     setUserInput(() => {
       return input;
     });
@@ -32,23 +33,25 @@ function App() {
     }
   };
   const validateInput = () => {
-    if (userInput === undefined) {
+    setErrorMsg();
+    setInputError();
+    if (userInput === undefined || userInput.length === 0) {
       let msg = "Movie name cannot be blank";
       setInputError(msg);
+      setUserInput();
     } else {
       search();
     }
   };
   const search = () => {
-    // if (userInput === undefined) {
-    //   alert("Movie name cannot be blank");
-    // } else {
     axios(myApiUrl + "s=" + userInput).then(({ data }) => {
-      console.log(userInput);
+      // console.log(userInput);
+      console.log(data);
       if (data.Error) {
-        setSearchResults([]);
         let msg = "Movie not Found.Try Again";
         setErrorMsg(msg);
+        setSearchResults([]);
+        setUserInput();
       } else {
         setErrorMsg("");
         let results = data.Search;
@@ -64,10 +67,14 @@ function App() {
       console.log(clickedMovieData);
       setMovieData(clickedMovieData);
     });
-    console.log(movieData);
+    // console.log(movieData);
     setModalIsOpen(true);
   };
 
+  const closePopup = () => {
+    setModalIsOpen(false);
+    setMovieData({});
+  };
   return (
     <div className="canvas">
       <div className="wrapper">
@@ -80,8 +87,8 @@ function App() {
           // search={search}
           onKeySearch={onKeySearch}
         />
-        {console.log(searchResults)}
-        {console.log(errorMsg)}
+        {/* {console.log(searchResults)}
+        {console.log(errorMsg)} */}
         <Searchresults
           searchResults={searchResults}
           openPopup={openPopup}
@@ -93,13 +100,14 @@ function App() {
             movieData={movieData}
             modalIsOpen={modalIsOpen}
             setModalIsOpen={setModalIsOpen}
+            closePopup={closePopup}
           />
         ) : (
           false
         )}
       </div>
       <footer className="main-footer">
-        <h3>All Rights Reserved @FilmyCanvas</h3>
+        <h3>Developed By: Indrajeet</h3>
       </footer>
     </div>
   );

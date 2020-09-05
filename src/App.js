@@ -14,6 +14,7 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [movieData, setMovieData] = useState({});
   const [errorMsg, setErrorMsg] = useState();
+  const [inputError, setInputError] = useState();
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const myApiUrl = "https://www.omdbapi.com/?apikey=39201518&";
@@ -27,27 +28,34 @@ function App() {
 
   const onKeySearch = (e) => {
     if (e.key === "Enter") {
+      validateInput();
+    }
+  };
+  const validateInput = () => {
+    if (userInput === undefined) {
+      let msg = "Movie name cannot be blank";
+      setInputError(msg);
+    } else {
       search();
     }
   };
-
   const search = () => {
-    if (userInput === undefined) {
-      alert("Movie name cannot be blank");
-    } else {
-      axios(myApiUrl + "s=" + userInput).then(({ data }) => {
-        console.log(userInput);
-        if (data.Error) {
-          setSearchResults([]);
-          let msg = "Movie not Found.Try Again";
-          setErrorMsg(msg);
-        } else {
-          setErrorMsg("");
-          let results = data.Search;
-          setSearchResults(results);
-        }
-      });
-    }
+    // if (userInput === undefined) {
+    //   alert("Movie name cannot be blank");
+    // } else {
+    axios(myApiUrl + "s=" + userInput).then(({ data }) => {
+      console.log(userInput);
+      if (data.Error) {
+        setSearchResults([]);
+        let msg = "Movie not Found.Try Again";
+        setErrorMsg(msg);
+      } else {
+        setErrorMsg("");
+        let results = data.Search;
+        setSearchResults(results);
+      }
+    });
+    // }
   };
 
   const openPopup = (id) => {
@@ -67,7 +75,9 @@ function App() {
         <Navbar />
         <Searchbox
           handleInput={handleInput}
-          search={search}
+          validateInput={validateInput}
+          inputError={inputError}
+          // search={search}
           onKeySearch={onKeySearch}
         />
         {console.log(searchResults)}

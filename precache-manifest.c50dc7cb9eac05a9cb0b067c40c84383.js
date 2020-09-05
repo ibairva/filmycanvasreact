@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53c9534e99a30aaaf9ccc83a51f4e152",
+    "revision": "4c6a6b2bf3e9d3aef05991dbe283107a",
     "url": "/filmycanvasreact/index.html"
   },
   {
-    "revision": "26cea29c28300929b1d7",
-    "url": "/filmycanvasreact/static/css/main.c819db7d.chunk.css"
+    "revision": "d24c344d7d1a6ea0e202",
+    "url": "/filmycanvasreact/static/css/main.f5992c56.chunk.css"
   },
   {
     "revision": "f6b0c9b97efc5623becf",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/filmycanvasreact/static/js/2.d12806c6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "26cea29c28300929b1d7",
-    "url": "/filmycanvasreact/static/js/main.6d5dd840.chunk.js"
+    "revision": "d24c344d7d1a6ea0e202",
+    "url": "/filmycanvasreact/static/js/main.704b8635.chunk.js"
   },
   {
     "revision": "552c4854a0f32e97a3fe",
